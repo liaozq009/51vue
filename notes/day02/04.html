@@ -57,10 +57,11 @@
 						console.log('num2：'+new Date());
 						return this.num1-1;
 					},
-					set:function(val){
-						// console.log('修改num2值');
+					set:function(val){ //传进来val值
+						console.log('修改num2值');
+						console.log('传进来的val:'+val);
 						// this.num2=val;
-						this.num1=111;
+						this.num1=111; //通过设置num2的依赖num1来改变num2的值，执行顺序：调用this.num2=333，然后启动set方法，修改num1后，再动态启动get方法，通过num1来修改num2的值
 					}
 				}
 			},
@@ -74,7 +75,7 @@
 					return this.num1-1;
 				},
 				change2(){
-					this.num2=111;
+					this.num2=333;
 				}
 			}
 			

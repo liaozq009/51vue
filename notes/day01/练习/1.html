@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hello word</title>
+	<script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+	<div id="itany">
+		{{msg}}
+	</div>
+	<script type="text/javascript">
+		// 是否允许vue-devtools进行调试
+		Vue.config.devtools=true;
+		// 阻止生成模式提示信息
+		Vue.config.productionTip = false;
+		var vm = new Vue({
+			el:'#itany',
+			data:{
+				msg:'hello word',
+			}
+		});
+	</script>
+</body>
+</html>

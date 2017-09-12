@@ -14,9 +14,9 @@ module.exports={
 				loader:'vue-loader'
 			},
 			{
-				test:/\.js$/, //所有以.js结尾的文件都由babel-loader加载，除了node_modules以外
+				test:/\.js$/, //所有以.js结尾的文件都由babel-loader加载，除了node_modules以外，加快打包速度
 				loader:'babel-loader',
-				exclude:/node_modules/
+				exclude:/node_modules/  
 			}
 		]
 	}

@@ -16,7 +16,7 @@
 			<h3>访问自己的数据：{{msg}},{{name}},{{age}},{{user.username}}</h3>
 			<h3>访问子组件的数据：{{sex}},{{height}}</h3>
 			<hr>
-
+			
 			<my-world :message="msg" :name="name" :age="age" :user="user" @e-world="getData"></my-world>
 		</div>
 	</template>
@@ -62,7 +62,7 @@
 							},
 							template:'#world',
 							// props:['message','name','age','user'], //简单的字符串数组
-							props:{ //也可以是对象，允许配置高级设置，如类型判断、数据校验、设置默认值
+							props:{ //也可以是对象，允许配置高级设置，如类型判断、数据校验、设置默认值   继承父元素数据
 								message:String,
 								name:{
 									type:String,

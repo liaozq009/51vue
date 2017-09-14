@@ -12,8 +12,11 @@
 					msg:'welcome to itany'
 				},
 				methods:{
-					update(){
-						this.msg='欢迎来到南京网博！';
+					update1(){
+						this.msg='数据第一次更新！';
+					},
+					update2(){
+						this.msg='数据第二次更新！';
 					},
 					destroy(){
 						// this.$destroy();
@@ -53,7 +56,8 @@
 		{{msg}}
 		<br>
 
-		<button @click="update">更新数据</button>
+		<button @click="update1">更新数据1</button>
+		<button @click="update2">更新数据2</button>
 		<button @click="destroy">销毁组件</button>
 	</div>
 </body>

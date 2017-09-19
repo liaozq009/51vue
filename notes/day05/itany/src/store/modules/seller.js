@@ -18,7 +18,7 @@ const getters={
 const actions={
 	getSeller({commit,state}){
 		axios.get('/api/seller').then(resp => {
-			// console.log(resp);
+			console.log(resp);
 			if(resp.data.errno==0){
 				commit(types.GET_SELLER,resp.data.data);
 			}

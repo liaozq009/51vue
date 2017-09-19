@@ -1,7 +1,9 @@
-import Vue from 'Vue'
-import Vuex from 'Vuex'
-import getters from './getters'
-import actions from './actions'
+
+// 注意vue和vuex 前面的v不是大写的V
+import Vue from 'vue'
+import Vuex from 'vuex'  
+import getters from './getters.js'
+import actions from './actions.js'
 import seller from './modules/seller.js'
 import goods from './modules/goods.js'
 import ratings from './modules/ratings.js'

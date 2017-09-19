@@ -11,6 +11,7 @@ Vue.use(VueRouter);
 //创建路由实例
 const router=new VueRouter(routerConfig);
 
+// 全局使用axios
 Vue.prototype.$http=axios;
 
 new Vue({
